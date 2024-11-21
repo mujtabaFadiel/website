@@ -14,15 +14,15 @@ function App() {
     {herf: '/sign-up', text: 'Sign Up'},
   ]
   return (
-    <Router>
-        <Navbar  links={navlinks} />
-        <Routes>
-          <Route path="/" excact element={<Home />} />
-          <Route path='/Products' element={<Products /> } />
-          <Route path='/services' element={<Services />} />
-          <Route path='/sign-up' element={<SignUp />} />
-        </Routes>
-    </Router>
+  <>
+    <Navbar  links={navlinks} />
+    <Routes>
+      <Route path="/" excact element={<Home />} />
+      <Route path='/Products' element={<Products /> } />
+      <Route path='/services' element={<Services />} />
+      <Route path='/sign-up' element={<SignUp />} />
+    </Routes>
+    </>
   );
 }
 
