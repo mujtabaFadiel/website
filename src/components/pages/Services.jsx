@@ -8,8 +8,13 @@ function Services() {
     <>
       <div className='img-container'>
         <h1 className='service'>SERVICES</h1>
-        <img className='back-img' src={location.state.src}/>
-        <p>{ location.state.text}</p>
+        {
+          location.state && (
+          <>
+            <img className='back-img' src={location.state.src}/>
+            <p>{ location.state.text}</p>
+          </>)
+        }
       </div>
     </>
   )

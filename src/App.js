@@ -17,7 +17,7 @@ function App() {
     <Router>
         <Navbar  links={navlinks} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" excact element={<Home />} />
           <Route path='/Products' element={<Products /> } />
           <Route path='/services' element={<Services />} />
           <Route path='/sign-up' element={<SignUp />} />

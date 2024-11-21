@@ -141,4 +141,8 @@
     .back-img{
       width: 80%;
     }
+    .img-container p {
+      padding-inline-start: 10px;
+      padding-inline-end: 10px;
+    }
   }
